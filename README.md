@@ -19,8 +19,8 @@ python command promp with a bunch of random commands I made...
 
 > cmd         runs the command prompt
 
-> osinfo      get general information about your computer
+> osinfo      gets general information about your computer
 
-> osASCII     get an ASCII image of your operating system's image
+> osASCII     gets an ASCII image of your operating system's image
 
-> osfetch     combination of osinfo and osASCII
+> osfetch     outputs combination of osinfo and osASCII
