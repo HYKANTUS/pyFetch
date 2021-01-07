@@ -1,19 +1,19 @@
 # pyCMD
-### python command promp with a bunch of random commands I made...
+#### python command promp with a bunch of random commands I made...
 
 ## All Available Commands (also see [help.txt](https://github.com/HYKANTUS/pyCMD/blob/main/help.txt "help file"))
 
-#### information commands
+### information commands
 
 ##### help        shows this command
 ##### credits     shows contributors
 
-#### main commands
+### main commands
 
 ##### exit        stops running pyCMD
 ##### srccode     shows all code
 
-#### basic commands
+### basic commands
 
 ##### cmd         runs the command prompt
 ##### osinfo      get general information about your computer
