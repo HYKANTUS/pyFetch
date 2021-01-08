@@ -4,7 +4,7 @@
 from time import sleep
 import os
 import platform
-import ascii
+import pyASCIIgenerator
 
 # # # # # # # # # # # # #
 #         INFO          #
@@ -80,50 +80,45 @@ def main():
         os = platform.system()
 
         if os.startswith('Windows'):
-            url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/1200px-Windows_logo_-_2012_%28dark_blue%29.svg.png'
+            filepath = 'osImages\\windows.png'
 
         if os.startswith('Mac'):
-            url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1010px-Apple_logo_black.svg.png'
+            filepath = 'osImages\\mac.png'
 
         if os.startswith('Linux'):
-            url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tux-simple.svg/154px-Tux-simple.svg.png'
+            filepath = 'osImages\\linux.png'
 
-        output = ascii.loadFromUrl(url, color=False)
-        print(output)
+        pyASCIIgenerator.asciify(filepath)
         print()
 
     elif cmd == 'osASCII -windows':
-        os = platform.system()
-
-        output = ascii.loadFromUrl(
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/1200px-Windows_logo_-_2012_%28dark_blue%29.svg.png',
-            color=False)
-        print(output)
+        filepath = 'osImages\\windows.png'
+        pyASCIIgenerator.asciify(filepath)
         print()
 
     elif cmd == 'osASCII -linux':
-        os = platform.system()
+        filepath = 'osImages\\linux.png'
+        pyASCIIgenerator.asciify(filepath)
+        print()
 
-        output = ascii.loadFromUrl(
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tux-simple.svg/154px-Tux-simple.svg.png',
-            color=False)
-        print(output)
+    elif cmd == 'osASCII -mac':
+        filepath = 'osImages\\mac.png'
+        pyASCIIgenerator.asciify(filepath)
         print()
 
     elif cmd == 'osfetch':
         os = platform.system()
 
         if os.startswith('Windows'):
-            url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/1200px-Windows_logo_-_2012_%28dark_blue%29.svg.png'
+            filepath = 'osImages\\windows.png'
 
         if os.startswith('Linux'):
-            url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tux-simple.svg/154px-Tux-simple.svg.png'
+            filepath = 'osImages\\linux.png'
 
         if os.startswith('Mac'):
-            url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1010px-Apple_logo_black.svg.png'
+            filepath = 'osImages\\mac.png'
 
-        output = ascii.loadFromUrl(url, color=False)
-        print(output)
+        pyASCIIgenerator.asciify(filepath)
         print()
 
         print('-        Operating System Information        -')
