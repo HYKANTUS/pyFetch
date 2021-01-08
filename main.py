@@ -9,6 +9,12 @@ import ascii
 # # # # # # # # # # # # #
 #         INFO          #
 # # # # # # # # # # # # #
+logofile = open('logo.txt', 'r')
+logolines = logofile.readlines()
+
+for line in logolines:
+    print("{}".format(line.strip()))
+
 print('pyCMD by HYKANTUS')
 
 information = '"help", "credits", or "license"'
@@ -34,7 +40,7 @@ def main():
         print()
 
     elif cmd == 'credits':
-        print('python script written by HYKANTUS')
+        print('python script written by HYKANTUS. \nGithub repository: https://github.com/HYKANTUS/pyCMD')
         print()
 
     elif cmd == 'license':
@@ -59,21 +65,7 @@ def main():
         print('=========================')
         print('Github repository: https://github.com/HYKANTUS/pyCMD')
 
-    # general commands
-    elif cmd == 'cmd':
-        from os import system
-
-        print()
-        print(
-            'run command prompt commands through pyCMD. \nTYPE "cmd" AGAIN TO CONTINUE. \nTYPE "exit" TWICE TO LEAVE THE COMMAND PROMPT. \n')
-
-        while True:
-            cmdIn = input('cmd > ')
-            system(cmdIn)
-
-            if cmdIn == 'exit':
-                break
-
+    # os commands
     elif cmd == 'osinfo':
         print('-        Operating System Information        -')
         print('name:            ', platform.system())
@@ -84,7 +76,6 @@ def main():
         print('processor:       ', platform.processor())
         print()
 
-    # os commands
     elif cmd == 'osASCII':
         os = platform.system()
 
@@ -144,14 +135,19 @@ def main():
         print('processor:       ', platform.processor())
         print()
 
-    elif cmd == 'python':
+    # general commands
+    elif cmd == 'cmd':
         from os import system
 
-        while True:
-            pyInput = input('python > ')
-            system(pyInput)
+        print()
+        print(
+            'run command prompt commands through pyCMD. \nTYPE "cmd" AGAIN TO CONTINUE. \nTYPE "exit" TWICE TO LEAVE THE COMMAND PROMPT. \n')
 
-            if pyInput == 'exit':
+        while True:
+            cmdIn = input('cmd > ')
+            system(cmdIn)
+
+            if cmdIn == 'exit':
                 break
 
 
