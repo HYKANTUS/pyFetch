@@ -1,5 +1,5 @@
 # pyCMD
-python command promp with a bunch of random commands I made...
+python command prompt with a bunch of random commands I made...
 
 ## All Available Commands (also see [help.txt](https://github.com/HYKANTUS/pyCMD/blob/main/help.txt "help file"))
 
