@@ -6,9 +6,7 @@ python command prompt with a bunch of random commands I made...
 ### information commands
 | COMMANDS                      | INFO               |
 | ----------------------------- | ------------------ |
-
 | help                          | shows this command |
-
 | credits                       | shows contributors |
 
 ### main commands
