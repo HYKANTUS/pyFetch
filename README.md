@@ -5,24 +5,24 @@ python command prompt with a bunch of random commands I made...
 
 ### information commands
 
-> help                            shows this command
+`help                            shows this command`
 
-> credits                         shows contributors
+`credits                         shows contributors`
 
 ### main commands
 
-> exit                            stops running pyCMD
+`exit                            stops running pyCMD`
 
-> srccode                         shows all code
+`srccode                         shows all code`
 
 ### basic commands
 
-> cmd                             runs the command prompt
+`cmd                             runs the command prompt`
 
-> osinfo                          gets general information about your computer
+`osinfo                          gets general information about your computer`
 
-> osASCII [-windows, -linux]      gets an ASCII image of your operating system's image
+`osASCII [-windows, -linux]      gets an ASCII image of your operating system's image`
 
-> osfetch                         outputs combination of osinfo and osASCII
+`osfetch                         outputs combination of osinfo and osASCII`
 
-> python                          runs python shell 
+`python                          runs python shell`
